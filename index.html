@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>SFHired Bikeway Network</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/application.css">
+
+    <link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="details">
+        <h3><i class="fa fa-bicycle"></i> Bikeway Network</h3>
+        <div class="results hidden">
+          <div class="first result shown"><i class="fa fa-eye"></i> <span class="length"></span> <span class="shortest-path">Shortest Path</span></div>
+          <div class="second result shown"><i class="fa fa-eye"></i> <span class="length"></span></div>
+          <div class="third result shown"><i class="fa fa-eye"></i> <span class="length"></span></div>
+        </div>
+        <div class="symbol">
+          <strong>Bike Lane</strong><div class="bicycle-lane"></div>
+        </div>
+        <div class="symbol">
+          <strong>Bike Route</strong><div class="bicycle-route"></div>
+        </div>
+        <div class="symbol last">
+          <strong>Bike Path</strong><div class="bicycle-path"></div>
+        </div>
+        <button id="find-bike-routes" class="button button-rounded button-flat-action" type="button">Find Biking Routes</button>
+      </div>
+      <div class="attributions">
+        <a href='https://www.mapbox.com/about/maps/' target='_blank'>Maps &copy; Mapbox &copy; OpenStreetMap</a>
+      </div>
+      <div id="map"></div>
+      <div id="overlay" class="hidden"></div>
+      <div id="alert" class="hidden">
+        <div class="message"></div>
+        <button id="close-alert" class="button button-rounded button-flat-primary" type="button">Close</button>
+      </div>      
+    </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="scripts/vendor.js"></script>
+
+  <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js"></script>
+
+  <script src="scripts/application.js"></script>
+</body>
+</html>
