@@ -1,0 +1,19 @@
+{
+	"ImportPath": ".",
+	"GoVersion": "go1.5",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/ant0ine/go-json-rest/rest",
+			"Comment": "v3.3.0-10-g01a517a",
+			"Rev": "01a517a7065ab0030bf286c6a8e5abc9b245c776"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "go1.0-cutoff-63-g11fc39a",
+			"Rev": "11fc39a580a008f1f39bb3d11d984fb34ed778d9"
+		}
+	]
+}
